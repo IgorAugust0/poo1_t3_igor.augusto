@@ -1,14 +1,14 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Figurinha {
     private String nomeJogador;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private float altura;
     private float peso;
     private String posicao;
     private String pais;
 
-    public Figurinha(String nomeJogador, Date dataNascimento, float altura, float peso, String posicao, String pais) {
+    public Figurinha(String nomeJogador, LocalDate dataNascimento, float altura, float peso, String posicao, String pais) {
         this.nomeJogador = nomeJogador;
         this.dataNascimento = dataNascimento;
         this.altura = altura;
@@ -31,10 +31,10 @@ public class Figurinha {
     public void setNomeJogador(String nomeJogador) {
         this.nomeJogador = nomeJogador;
     }
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
     public float getAltura() {
@@ -61,5 +61,5 @@ public class Figurinha {
     public void setPais(String pais) {
         this.pais = pais;
     }
-    
+
 }
