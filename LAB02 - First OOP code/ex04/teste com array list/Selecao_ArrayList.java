@@ -1,15 +1,15 @@
-/// import java.util.ArrayList;
+import java.util.List;
 
-public class Selecao {
+public class Selecao_ArrayList {
     private String nomeSelecao;
     private String tecnico;
     private String pais;
     private int anoFundacao;
     private int qtdTitulos;
-    private Figurinha[] jogadores = new Figurinha[11];
-    // private ArrayList<Figurinha> jogadores = new ArrayList<Figurinha>();
+    // private Figurinha[] jogadores = new Figurinha_ArrayList[11];
+    private List<String> jogadores;
 
-    public Selecao(String nomeSelecao, String tecnico, String pais, int anoFundacao, int qtdTitulos) {
+    public Selecao_ArrayList(String nomeSelecao, String tecnico, String pais, int anoFundacao, int qtdTitulos, List<String> jogadores) {
         this.nomeSelecao = nomeSelecao;
         this.tecnico = tecnico;
         this.pais = pais;
@@ -17,11 +17,11 @@ public class Selecao {
         this.qtdTitulos = qtdTitulos;
     }
 
-    public Figurinha getJogador(int i) {
-        return jogadores[i];
+    public String getJogador(int i) {
+        return jogadores.get(i);
     }
-    public void setJogador(Figurinha jogador, int i) {
-        this.jogadores[i] = jogador;
+    public void setJogador(List<String> jogador, int i) {
+        this.jogadores = jogador;
     }
 
     public void imprimir() {
@@ -31,9 +31,7 @@ public class Selecao {
         System.out.println("Ano de fundação: " + this.anoFundacao);
         System.out.println("Quantidade de títulos: " + this.qtdTitulos);
         System.out.println("Jogadores: " + this.jogadores);
-        for (int i = 0; i < jogadores.length; i++) {
-            jogadores[i].imprimir();
-        }
+        
     }
     
 }

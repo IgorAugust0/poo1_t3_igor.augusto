@@ -1,13 +1,10 @@
-/// import java.util.ArrayList;
-
 public class Selecao {
     private String nomeSelecao;
     private String tecnico;
     private String pais;
     private int anoFundacao;
     private int qtdTitulos;
-    private Figurinha[] jogadores = new Figurinha[11];
-    // private ArrayList<Figurinha> jogadores = new ArrayList<Figurinha>();
+    Figurinha[] jogadores = new Figurinha[11];
 
     public Selecao(String nomeSelecao, String tecnico, String pais, int anoFundacao, int qtdTitulos) {
         this.nomeSelecao = nomeSelecao;
@@ -30,7 +27,7 @@ public class Selecao {
         System.out.println("País: " + this.pais);
         System.out.println("Ano de fundação: " + this.anoFundacao);
         System.out.println("Quantidade de títulos: " + this.qtdTitulos);
-        System.out.println("Jogadores: " + this.jogadores);
+        System.out.println("Jogadores: ");
         for (int i = 0; i < jogadores.length; i++) {
             jogadores[i].imprimir();
         }
