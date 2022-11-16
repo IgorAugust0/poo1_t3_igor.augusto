@@ -1,5 +1,3 @@
-// import java.util.ArrayList;
-
 public class Selecao {
     private String nomeSelecao;
     private String tecnico;
@@ -7,7 +5,6 @@ public class Selecao {
     private int anoFundacao;
     private int qtdTitulos;
     private Figurinha[] jogadores = new Figurinha[11];
-    // private ArrayList<Figurinha> jogadores = new ArrayList<Figurinha>();
 
     public Selecao(String nomeSelecao, String tecnico, String pais, int anoFundacao, int qtdTitulos) {
         this.nomeSelecao = nomeSelecao;
