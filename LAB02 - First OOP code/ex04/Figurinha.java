@@ -17,6 +17,17 @@ public class Figurinha {
         this.pais = pais;
     }
 
+    public Figurinha(Figurinha jogador){
+
+        this.nomeJogador = jogador.getNomeJogador();
+        this.dataNascimento = jogador.getDataNascimento();
+        this.altura = jogador.getAltura();
+        this.peso = jogador.getPeso();
+        this.posicao = jogador.getPosicao();
+        this.pais = jogador.getPais();
+
+    }
+
     public void imprimir() {
         System.out.println("Nome do jogador: " + this.nomeJogador);
         System.out.println("Data de nascimento: " + this.dataNascimento);

@@ -20,6 +20,11 @@ public class Selecao {
     public void setJogador(Figurinha jogador, int i) {
         this.jogadores[i] = jogador;
     }
+    /*public void setJogador(Figurinha jogador, int i){
+
+        this.jogador[i] = new Figurinha(jogador);
+
+    }*/
 
     public void imprimir() {
         System.out.println("Nome da seleção: " + this.nomeSelecao);

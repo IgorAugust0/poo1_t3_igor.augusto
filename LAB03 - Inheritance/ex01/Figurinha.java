@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Figurinha_ArrayList {
+public class Figurinha {
     private String nomeJogador;
     private LocalDate dataNascimento;
     private float altura;
@@ -8,7 +8,7 @@ public class Figurinha_ArrayList {
     private String posicao;
     private String pais;
 
-    public Figurinha_ArrayList(String nomeJogador, LocalDate dataNascimento, float altura, float peso, String posicao, String pais) {
+    public Figurinha(String nomeJogador, LocalDate dataNascimento, float altura, float peso, String posicao, String pais) {
         this.nomeJogador = nomeJogador;
         this.dataNascimento = dataNascimento;
         this.altura = altura;
@@ -17,7 +17,24 @@ public class Figurinha_ArrayList {
         this.pais = pais;
     }
 
-    public void imprimir() {
+    public Figurinha(Figurinha jogador){
+
+        this.nomeJogador = jogador.getNomeJogador();
+        this.dataNascimento = jogador.getDataNascimento();
+        this.altura = jogador.getAltura();
+        this.peso = jogador.getPeso();
+        this.posicao = jogador.getPosicao();
+        this.pais = jogador.getPais();
+
+    }
+
+    public Figurinha(String pais){
+
+        this.pais = pais;
+
+    }
+
+    public void MostrarFigurinha() {
         System.out.println("Nome do jogador: " + this.nomeJogador);
         System.out.println("Data de nascimento: " + this.dataNascimento);
         System.out.println("Altura: " + this.altura);
