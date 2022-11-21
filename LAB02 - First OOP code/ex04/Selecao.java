@@ -20,8 +20,8 @@ public class Selecao {
     public void setJogador(Figurinha jogador, int i) {
         this.jogadores[i] = jogador;
     }
-    /*public void setJogador(Figurinha jogador, int i){
 
+    /*public void setJogador(Figurinha jogador, int i){
         this.jogador[i] = new Figurinha(jogador);
 
     }*/

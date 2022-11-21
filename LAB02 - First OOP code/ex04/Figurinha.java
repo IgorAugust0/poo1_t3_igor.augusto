@@ -18,7 +18,6 @@ public class Figurinha {
     }
 
     public Figurinha(Figurinha jogador){
-
         this.nomeJogador = jogador.getNomeJogador();
         this.dataNascimento = jogador.getDataNascimento();
         this.altura = jogador.getAltura();
