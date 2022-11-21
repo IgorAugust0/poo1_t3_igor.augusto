@@ -1,12 +1,12 @@
 import java.time.LocalDate;
 
 public class Figurinha {
-    protected String nomeJogador;
-    protected LocalDate dataNascimento;
-    protected float altura;
-    protected float peso;
-    protected String posicao;
-    protected String pais;
+    private String nomeJogador;
+    private LocalDate dataNascimento;
+    private float altura;
+    private float peso;
+    private String posicao;
+    private String pais;
 
     public Figurinha(String nomeJogador, LocalDate dataNascimento, float altura, float peso, String posicao, String pais) {
         this.nomeJogador = nomeJogador;
