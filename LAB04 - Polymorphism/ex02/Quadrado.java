@@ -13,6 +13,6 @@ public class Quadrado extends FormaBidimensional {
 
     @Override
     public String descricao() {
-        return "É um quadrado!";
+        return "Área do quadrado: ";
     }
 }

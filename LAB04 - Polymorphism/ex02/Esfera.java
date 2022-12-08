@@ -17,7 +17,7 @@ public class Esfera extends FormaTridimensional {
 
     @Override
     public String descricao() {
-        return "É uma esfera";
+        return "Área da esfera: ";
     }
 
 }

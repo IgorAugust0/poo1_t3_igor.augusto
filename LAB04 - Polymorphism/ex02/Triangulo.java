@@ -12,6 +12,6 @@ public class Triangulo extends FormaBidimensional {
 
     @Override
     public String descricao() {
-        return "É um triângulo";
+        return "Área do triângulo: ";
     }
 }

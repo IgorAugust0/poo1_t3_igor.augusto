@@ -18,6 +18,6 @@ public class Cubo extends FormaTridimensional {
 
     @Override
     public String descricao() {
-        return "É um cubo";
+        return "Área do cubo: ";
     }
 }

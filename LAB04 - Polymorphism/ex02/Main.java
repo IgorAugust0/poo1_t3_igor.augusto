@@ -19,10 +19,10 @@ public class Main {
             adicionarForma();
             formas.forEach(e -> {
                 if (e instanceof FormaBidimensional) {
-                    System.out.printf("Área do " + ((FormaBidimensional) e).descricao() + ": %.2f\n\n", ((FormaBidimensional) e).ObterArea());
+                    System.out.printf(((FormaBidimensional) e).descricao() + "%.2f\n\n", ((FormaBidimensional) e).ObterArea());
                 } else if (e instanceof FormaTridimensional) {
-                    System.out.printf("Área do " + ((FormaTridimensional) e).descricao() + ": %.2f\n", ((FormaTridimensional) e).ObterArea());
-                    System.out.printf("Volume do " + ((FormaTridimensional) e).descricao() + ": %.2f\n\n", ((FormaTridimensional) e).ObterVolume());
+                    System.out.printf(((FormaTridimensional) e).descricao() + "%.2f\n", ((FormaTridimensional) e).ObterArea());
+                    System.out.printf(((FormaTridimensional) e).descricao() + "%.2f\n\n", ((FormaTridimensional) e).ObterVolume());
                 }
             });
         

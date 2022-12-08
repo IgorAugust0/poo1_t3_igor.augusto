@@ -18,6 +18,6 @@ public class Tetraedro extends FormaTridimensional {
 
     @Override
     public String descricao(){
-        return "É um tetraedro";
+        return "Área do tetraedro: ";
     }
 }

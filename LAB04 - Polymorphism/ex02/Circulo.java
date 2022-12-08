@@ -13,7 +13,7 @@ public class Circulo extends FormaBidimensional {
 
     @Override
     public String descricao() {
-        return "É um círculo!";
+        return "Área do círculo: ";
     }
 }
 
