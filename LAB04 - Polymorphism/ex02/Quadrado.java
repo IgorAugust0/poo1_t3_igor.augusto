@@ -2,8 +2,8 @@ package ex02;
 
 public class Quadrado extends FormaBidimensional {
 
-    public Quadrado(double largura) {
-        super(largura, largura);
+    public Quadrado(double lado) {
+        super(lado, lado);
     }
 
     @Override

@@ -1,8 +1,8 @@
 package ex02;
 
 public class Triangulo extends FormaBidimensional {
-    public Triangulo(double altura, double largura) {
-        super(altura, largura);
+    public Triangulo(double base, double altura) {
+        super(base, altura);
     }
 
     @Override
