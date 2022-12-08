@@ -1,4 +1,4 @@
-package ex01;
+package ex02;
 
 public abstract class FormaBidimensional extends Forma {
     private double altura;
@@ -9,7 +9,7 @@ public abstract class FormaBidimensional extends Forma {
         this.largura = largura;
     }
 
-    public FormaBidimensional(){
+    public FormaBidimensional() {
         super();
     }
 
@@ -20,7 +20,7 @@ public abstract class FormaBidimensional extends Forma {
         return altura;
     }
 
-    public double GetLargura(){
+    public double GetLargura() {
         return largura;
     }
 }

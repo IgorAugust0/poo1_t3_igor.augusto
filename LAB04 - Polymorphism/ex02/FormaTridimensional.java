@@ -1,6 +1,6 @@
-package ex01;
+package ex02;
 
-public abstract class FormaTridimensional extends Forma{
+public abstract class FormaTridimensional extends Forma {
     private double altura;
     private double largura;
     private double comprimento;
@@ -11,7 +11,7 @@ public abstract class FormaTridimensional extends Forma{
         this.comprimento = comprimento;
     }
 
-    public FormaTridimensional(){
+    public FormaTridimensional() {
         super();
     }
 
@@ -23,11 +23,11 @@ public abstract class FormaTridimensional extends Forma{
         return altura;
     }
 
-    public double GetLargura(){
+    public double GetLargura() {
         return largura;
     }
 
-    public double GetComprimento(){
+    public double GetComprimento() {
         return comprimento;
     }
 }
