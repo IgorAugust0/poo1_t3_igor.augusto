@@ -10,7 +10,6 @@ public class EstudantePosGrad extends Estudante {
         this.linhaDePesquisa = linhaDePesquisa;
     }
 
-
     public void print() {
         super.print();
         System.out.println("EstudantePosGrad{" +

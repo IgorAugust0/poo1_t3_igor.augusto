@@ -28,7 +28,8 @@ public class Universidade {
             }
         }
         System.out.println("Nome da Universidade: " + nomeUni +
-                "\nAno de Fundação: " + anoFundacao +
+                "\nAno de Fundação: " + anoFundacao + "\n" +
+                "\nQuantidade de Estudantes por titulação acadêmica" +
                 "\nGraduação: " + estGrad +
                 "\nMestrado: " + estMest +
                 "\nDoutorado: " + estDout +
@@ -41,20 +42,22 @@ public class Universidade {
         }
     }
 
-    
 
     public void mostraNome() {
         for (Estudante estudantesi : estudantes) {
             if (estudantesi instanceof EstudanteDoutorado) {
-                System.out.println("Nome: " + ((EstudanteDoutorado) estudantesi).getNome() + "\n" +
+                System.out.println("Tipo: Estudante de Doutorado" + "\n" +
+                        "Nome: " + ((EstudanteDoutorado) estudantesi).getNome() + "\n" +
                         "Título da Tese: " + ((EstudanteDoutorado) estudantesi).getTituloTese() + "\n" +
                         "Linha de Pesquisa: " + ((EstudanteDoutorado) estudantesi).getLinhaDePesquisa() + "\n");
             } else if (estudantesi instanceof EstudanteMestrado) {
-                System.out.println("Nome: " + ((EstudanteMestrado) estudantesi).getNome() + "\n" +
+                System.out.println("Tipo: Estudante de Mestrado" + "\n" +
+                        "Nome: " + ((EstudanteMestrado) estudantesi).getNome() + "\n" +
                         "Título da Dissertação: " + ((EstudanteMestrado) estudantesi).getTituloDissertacao() + "\n" +
                         "Linha de Pesquisa: " + ((EstudanteMestrado) estudantesi).getLinhaDePesquisa() + "\n");
             } else if (estudantesi instanceof EstudanteGraduacao) {
-                System.out.println("Nome: " + ((EstudanteGraduacao) estudantesi).getNome() + "\n" +
+                System.out.println("Tipo: Estudante de Graduação" + "\n" +
+                        "Nome: " + ((EstudanteGraduacao) estudantesi).getNome() + "\n" +
                         "Titulo do Trabalho de Conclusão: " + ((EstudanteGraduacao) estudantesi).getTituloTCC() + "\n");
             }
         }
@@ -86,6 +89,9 @@ public class Universidade {
         }
     }*/
 
+
+
+    // Getters e Setters
     public String getNomeUni() {
         return nomeUni;
     }
