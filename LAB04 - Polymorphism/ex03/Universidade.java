@@ -44,7 +44,7 @@ public class Universidade {
 
 
     public void mostraNome() {
-        for (Estudante estudantesi : estudantes) {
+        for (Estudante estudantesi : estudantes) { // for each loop
             if (estudantesi instanceof EstudanteDoutorado) {
                 System.out.println("Tipo: Estudante de Doutorado" + "\n" +
                         "Nome: " + ((EstudanteDoutorado) estudantesi).getNome() + "\n" +
