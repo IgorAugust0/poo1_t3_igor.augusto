@@ -1,4 +1,7 @@
-package ex02;
+package ex03;
+
+import ex02.ContaCorrente;
+import ex02.ContaEspecial;
 
 public class UsaBanco {
     public static void main(String []args){
