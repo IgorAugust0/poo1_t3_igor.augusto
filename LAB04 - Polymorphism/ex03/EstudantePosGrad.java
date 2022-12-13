@@ -1,13 +1,13 @@
 package ex03;
 
-public abstract class EstudantePosGrad extends Estudante {
+public class EstudantePosGrad extends Estudante {
     private String formacao; // curso  de graduação que o estudante formou
-    private String linhadDePesquisa;
+    private String linhaDePesquisa;
 
-    public EstudantePosGrad(String nome, String endereco, String formacao, String linhadDePesquisa) {
+    public EstudantePosGrad(String nome, String endereco, String formacao, String linhaDePesquisa) {
         super(nome, endereco);
         this.formacao = formacao;
-        this.linhadDePesquisa = linhadDePesquisa;
+        this.linhaDePesquisa = linhaDePesquisa;
     }
 
 
@@ -15,7 +15,7 @@ public abstract class EstudantePosGrad extends Estudante {
         super.print();
         System.out.println("EstudantePosGrad{" +
                 "formacao='" + formacao + '\'' +
-                ", linhadDePesquisa='" + linhadDePesquisa + '\'' +
+                ", linhaDePesquisa='" + linhaDePesquisa + '\'' +
                 '}');
     }
 
@@ -27,11 +27,11 @@ public abstract class EstudantePosGrad extends Estudante {
         this.formacao = formacao;
     }
 
-    public String getLinhadDePesquisa() {
-        return linhadDePesquisa;
+    public String getLinhaDePesquisa() {
+        return linhaDePesquisa;
     }
 
-    public void setLinhadDePesquisa(String linhadDePesquisa) {
-        this.linhadDePesquisa = linhadDePesquisa;
+    public void setLinhaDePesquisa(String linhaDePesquisa) {
+        this.linhaDePesquisa = linhaDePesquisa;
     }
 }

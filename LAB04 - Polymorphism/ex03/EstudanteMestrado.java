@@ -10,10 +10,10 @@ public class EstudanteMestrado extends EstudantePosGrad {
         this.tituloDissertacao = tituloDissertacao;
     }
 
-    @Override
+    /*@Override
     public double calc_cr(boolean incluiReprovacao) {
         return 7;
-    }
+    }*/
 
     @Override
     public void print() {

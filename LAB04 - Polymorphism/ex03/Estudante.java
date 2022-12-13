@@ -1,6 +1,6 @@
 package ex03;
 
-public abstract class Estudante {
+public class Estudante {
     private String nome;
     private String endereco;
 
@@ -9,7 +9,7 @@ public abstract class Estudante {
         this.endereco = endereco;
     }
 
-    public abstract double calc_cr(boolean incluiReprovacao);
+    // public abstract double calc_cr(boolean incluiReprovacao);
 
     public void print() {
         System.out.println("Estudante{" +
