@@ -27,9 +27,12 @@ public class Universidade {
                 estDout++;
             }
         }
-        System.out.println("Estudantes Graduação: " + estGrad +
-                "\nEstudantes Mestrado: " + estMest +
-                "\nEstudantes Doutorado: " + estDout);
+        System.out.println("Nome da Universidade: " + nomeUni +
+                "\nAno de Fundação: " + anoFundacao +
+                "\nGraduação: " + estGrad +
+                "\nMestrado: " + estMest +
+                "\nDoutorado: " + estDout +
+                "\nTotal de Estudantes: " + (estGrad + estMest + estDout) + '\n');
     }
 
     public void addEstudante(Estudante est, int pos) {
@@ -38,31 +41,42 @@ public class Universidade {
         }
     }
 
-    /*public void addEstudante2(Estudante est) {
-        for (int i = 0; i < estudantes.length; i++) {
-            if (estudantes[i] == null) {
-                estudantes[i] = est;
-                break;
-            }
-        }
-    }*/
+    
 
     public void mostraNome() {
         for (Estudante estudantesi : estudantes) {
             if (estudantesi instanceof EstudanteDoutorado) {
-                System.out.println("Nome: " + ((EstudanteDoutorado) estudantesi).getNome() +
-                        "Título da Tese: " + ((EstudanteDoutorado) estudantesi).getTituloTese() +
+                System.out.println("Nome: " + ((EstudanteDoutorado) estudantesi).getNome() + "\n" +
+                        "Título da Tese: " + ((EstudanteDoutorado) estudantesi).getTituloTese() + "\n" +
                         "Linha de Pesquisa: " + ((EstudanteDoutorado) estudantesi).getLinhaDePesquisa() + "\n");
-            } else {
-                System.out.println("Nome: " + estudantesi.getNome() + "\n");
+            } else if (estudantesi instanceof EstudanteMestrado) {
+                System.out.println("Nome: " + ((EstudanteMestrado) estudantesi).getNome() + "\n" +
+                        "Título da Dissertação: " + ((EstudanteMestrado) estudantesi).getTituloDissertacao() + "\n" +
+                        "Linha de Pesquisa: " + ((EstudanteMestrado) estudantesi).getLinhaDePesquisa() + "\n");
+            } else if (estudantesi instanceof EstudanteGraduacao) {
+                System.out.println("Nome: " + ((EstudanteGraduacao) estudantesi).getNome() + "\n" +
+                        "Titulo do Trabalho de Conclusão: " + ((EstudanteGraduacao) estudantesi).getTituloTCC() + "\n");
+            }
+        }
+    }
+    
+    public void copiaEstPos(Estudante[] est, int n) {
+        int j = 0;
+        for (int i = 0; i < estudantes.length; i++) {
+            if (estudantes[i] instanceof EstudantePosGrad) {
+                est[j] = estudantes[i];
+                j++;
+            }
+            if (j == n) {
+                break;
             }
         }
     }
 
-    public void copiaEstPos(Estudante est[], int n) {
+    /*public void copiaEstPos(Estudante est[], int n) {
         for (int i = 0; i < this.estudantes.length && i < n; i++) {
+            int pos = 0;
             if (this.estudantes[i] instanceof EstudantePosGrad) {
-                int pos = 0;
                 est[pos] = this.estudantes[i];
                 pos++;
                 this.estudantes[i].print();
@@ -70,7 +84,7 @@ public class Universidade {
                 this.estudantes[i].print();
             }
         }
-    }
+    }*/
 
     public String getNomeUni() {
         return nomeUni;
