@@ -1,3 +1,5 @@
+package ex03;
+
 public class EstudanteGraduacao extends Estudante {
     private String tituloTCC;
 

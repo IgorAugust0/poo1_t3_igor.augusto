@@ -1,3 +1,5 @@
+package ex01;
+
 public class FolhaPagamento {
     static double FolhaDePagamento(Funcionario[] funcionarios) {
         double total = 0;

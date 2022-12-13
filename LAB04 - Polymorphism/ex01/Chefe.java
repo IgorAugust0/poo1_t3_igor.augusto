@@ -1,3 +1,5 @@
+package ex01;
+
 import java.util.Date;
 
 public class Chefe extends Funcionario {

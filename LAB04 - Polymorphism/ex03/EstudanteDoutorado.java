@@ -1,3 +1,4 @@
+package ex03;
 public class EstudanteDoutorado extends EstudantePosGrad {
     String tituloTese;
 

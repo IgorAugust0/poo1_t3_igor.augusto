@@ -1,3 +1,5 @@
+package ex03;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -26,10 +28,8 @@ public class Main {
 
         // casos com polimorfismo
         Estudante eg2 = new EstudanteGraduacao("Maria", "Rua Maio", "Java is funny");
-        Estudante epm2 = new EstudanteMestrado("Carla","Rua Primavera","Medicina",
-                "Vacinas de RNA", "Anticorpos","academico");
-        Estudante epd2 = new EstudanteDoutorado("Bruno","Rua Inverno",
-                "Tecnologia","Processamento de Imagens","Carros Inteligentes");
+        Estudante epm2 = new EstudanteMestrado("Carla","Rua Primavera","Medicina", "Vacinas de RNA", "Anticorpos","academico");
+        Estudante epd2 = new EstudanteDoutorado("Bruno","Rua Inverno", "Tecnologia","Processamento de Imagens","Carros Inteligentes");
 
         eg2.calc_cr(false);
         epm2.calc_cr(true);
@@ -37,16 +37,14 @@ public class Main {
 
         Estudante[] e = new Estudante[3];
         e[0] = new EstudanteGraduacao("Maria", "Rua Maio", "Java is funny");
-        e[1] = new EstudanteMestrado("Carla","Rua Primavera","Medicina",
-                "Vacinas de RNA", "Anticorpos","academico");
-        e[2] = new EstudanteDoutorado("Bruno","Rua Inverno",
-                "Tecnologia","Processamento de Imagens","Carros Inteligentes");
+        e[1] = new EstudanteMestrado("Carla","Rua Primavera","Medicina", "Vacinas de RNA", "Anticorpos","academico");
+        e[2] = new EstudanteDoutorado("Bruno","Rua Inverno", "Tecnologia","Processamento de Imagens","Carros Inteligentes");
 
         for (Estudante ei : e){
             ei.calc_cr(true);
         }
 
-        for (int i =0; i < e.length; i++){
+        for (int i = 0; i < e.length; i++){
             e[i].calc_cr(true);
         }
         /*

@@ -1,3 +1,5 @@
+package ex03;
+
 public abstract class Estudante {
     private String nome;
     private String endereco;
